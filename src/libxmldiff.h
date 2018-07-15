@@ -28,7 +28,8 @@
 #define LIBXMLDIFF_VER "v0.2.8"
 
 /*
-#ifdef _WIN32
+#define WITHOUT_LIBXSLT
+#ifdef _WIN32_DISABLED_DISABLED
 #ifdef LIBXMLDIFF_EXPORTS
 #define LIBXMLDIFF_API __declspec(dllexport)  
 #define LIBXMLUTIL_API __declspec(dllexport)  
@@ -65,8 +66,12 @@
 // warning C4267: '=' : conversion de 'size_t' en 'int', perte possible de données
 #pragma warning (disable : 4005 4018 4267)
 
+#ifndef _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES
 #define _CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES 1
+#endif
+#ifndef _CRT_SECURE_NO_DEPRECATE
 #define _CRT_SECURE_NO_DEPRECATE
+#endif
 
 #include <string>
 #include <vector>

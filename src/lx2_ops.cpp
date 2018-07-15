@@ -26,6 +26,7 @@
 
 #include <string.h>
 #include <stdarg.h>
+#include <string.h>
 #include <libxml/globals.h>
 #include <libxml/parser.h>
 // #include <libxml/parserinternals.h>
@@ -56,7 +57,7 @@ static xmlParserCtxtPtr ctxt;
 
 #ifndef WITH_PARSERCTX
 // The Error function callback
-void xdErrorFunc(void *ctx, const char *msg, ...) 
+void xdErrorFunc(void* /*ctx*/, const char *msg, ...) 
 {
     /*
     static char str[10240];

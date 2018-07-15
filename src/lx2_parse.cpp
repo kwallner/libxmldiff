@@ -27,6 +27,7 @@
 
 #include <string.h>
 #include <iostream>
+#include <string.h>
 #include <sstream>
 #include <fstream>
 #include <vector>

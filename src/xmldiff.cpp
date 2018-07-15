@@ -59,11 +59,11 @@ struct appCommand curOptions;
 
 
 /// Standart Progression bar callback
-void cbPrintProgressionBar(int percent, int prec,
+void cbPrintProgressionBar(int percent, int /*prec*/,
                            long nbNodesBefore, 
                            long nbNodesAfter,
                            long nbNodesProcessed,
-						   void * arg)
+						   void * /*arg*/)
 {
     static int precPer;
     switch (percent)
