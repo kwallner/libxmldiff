@@ -27,8 +27,8 @@
 
 #define LIBXMLDIFF_VER "v0.2.8"
 
-/*
 #define WITHOUT_LIBXSLT
+/*
 #ifdef _WIN32_DISABLED_DISABLED
 #ifdef LIBXMLDIFF_EXPORTS
 #define LIBXMLDIFF_API __declspec(dllexport)  

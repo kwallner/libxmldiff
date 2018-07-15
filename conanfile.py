@@ -23,7 +23,7 @@ class libxmldiffConan(ConanFile):
         cmake.configure()
         cmake.build()
         # cmake.test() # FIXME
-        #cmake.install()
+        cmake.install()
 
     def package_info(self):
         self.env_info.libxmldiff_DIR = self.package_folder
