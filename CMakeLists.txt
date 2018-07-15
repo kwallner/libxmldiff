@@ -21,6 +21,12 @@ conan_basic_setup()
 conan_define_targets()
 
 #
+# Requirements
+#
+find_package(libiconv REQUIRED)
+find_package(libxml2 REQUIRED)
+
+#
 # Subdirs
 #
 ADD_SUBDIRECTORY(src)

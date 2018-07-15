@@ -1,5 +1,7 @@
+add_definitions(-DWITHOUT_LIBXSLT)
+
 add_library(xmldiff STATIC errors.cpp lx2_diff.cpp lx2_ops.cpp lx2_parse.cpp lx2_util.cpp)
-target_link_libraries(xmldiff xml2)
+target_link_libraries(xmldiff PUBLIC xml2 iconv)
 set_target_properties(xmldiff
         PROPERTIES
             INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}"
